@@ -1,0 +1,26 @@
+<div class="row">
+  <div class="col-md-12">
+
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Nombre</th>
+          <th>Correo</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let u of this.usuarios">
+            <td>{{u.id}}</td>
+            <td>{{u.nombre+' '+u.apellidop+' '+u.apellidom }}</td>
+            <td>{{u.email}}</td>
+            <td>
+              <button type="button" (click)='editar(u.id)'  class="btn btn-primary">editar</button>
+              <button type="button" (click)='detalle(u.id)' class="btn btn-info">Detalle</button>
+            </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

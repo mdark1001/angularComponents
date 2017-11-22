@@ -1,0 +1,31 @@
+<div class="container main-container">
+  <h1 class="text-center">Demo <small>angular</small></h1>
+  <hr>
+  <ul class="list-group">
+    <li class="list-group-item">
+      <b>ngOnInit</b>: Cuando el compoente esta inicializado.
+    </li>
+    <li class="list-group-item">
+      <b>ngOnChanges</b>: Cuando la data de las propiedades relacionadas cambia
+    </li>
+    <li class="list-group-item">
+      <b>ngDoCheck</b>: Durante cada revision del ciclo de detencción de cambios
+    </li>
+    <li class="list-group-item">
+      <b>ngAfterConentInit</b>: Después de insertar contenido <"app-alguna-pagina">
+    </li>
+    <li class="list-group-item">
+      <b>ngAfterConentCheck</b>: Después de revisar el contenido insertado
+    </li> 
+    <!---->
+    <li class="list-group-item">
+      <b>ngOnDestroy</b>:Justo antes que se destruya el compoente o directiva
+    </li>
+
+
+  </ul>
+
+
+  <app-navbar></app-navbar>
+  <router-outlet></router-outlet>
+</div>
